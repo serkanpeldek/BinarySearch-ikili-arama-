@@ -13,8 +13,11 @@ public class BinarySearch {
 		fillArray();
 		sortArray();
 		//printArray();
+		print();
 	}
-	
+	public void print(){
+	System.out.println("This is a binary search JAVA program");
+	}
 	public void search(int value){
 		this.value=value;
 		binarySearchR(0,size-1);
@@ -27,7 +30,7 @@ public class BinarySearch {
 			System.out.println(begin+" "+middle+" "+end);
 			if(middle<=begin||middle>=end)
 			{
-				System.out.println("Aranan değer bulunamadı");
+				System.out.println("Aranan deÃ°er bulunamadÃ½");
 				break;
 			}
 			if(array[middle]>value){
@@ -37,8 +40,8 @@ public class BinarySearch {
 				begin=middle+1;
 			 
 			}else{
-				System.out.println("Aradığınız değer bulundu");
-				System.out.println("İndeks değeri: "+middle);
+				System.out.println("AradÃ½Ã°Ã½nÃ½z deÃ°er bulundu");
+				System.out.println("Ãndeks deÃ°eri: "+middle);
 				break;
 				
 			}
@@ -49,7 +52,7 @@ public class BinarySearch {
 		System.out.println(begin+" "+middle+" "+end);
 		if(middle<=begin||middle>=end)
 		{
-			System.out.println("Aranan değer bulunamadı");
+			System.out.println("Aranan deÃ°er bulunamadÃ½");
 			return;
 		}
 		if(array[middle]>value){
@@ -59,8 +62,8 @@ public class BinarySearch {
 			begin=middle+1;
 			binarySearchR(begin,end);
 		}else{
-			System.out.println("Aradığınız değer bulundu");
-			System.out.println("İndeks değeri: "+middle);
+			System.out.println("AradÃ½Ã°Ã½nÃ½z deÃ°er bulundu");
+			System.out.println("Ãndeks deÃ°eri: "+middle);
 			
 		}
 	}
